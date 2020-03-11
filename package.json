@@ -9,8 +9,8 @@
       "build:expanded": "node-sass --include-path scss index.scss dist/index.css --output-style expanded",
       "build:min": "node-sass --include-path scss index.scss dist/index.min.css --output-style compressed",
       "prebuild": "yarn prebuild:min & yarn prebuild:expanded",
-      "prebuild:min": "rimraf index.min.css",
-      "prebuild:expanded": "rimraf index.css"
+      "prebuild:min": "rimraf dist/index.min.css",
+      "prebuild:expanded": "rimraf dist/index.css"
    },
    "repository": {
       "type": "git",
