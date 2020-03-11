@@ -4,10 +4,13 @@
    "description": "Colors classess for css3",
    "main": "index.css",
    "scripts": {
-      "dev": "node-sass --watch --include-path scss index.scss index.css --output-style expanded --source-map-embed true",
-      "build": "yarn build:expanded & yarn build:min",
+      "dev": "yarn prebuild:expanded & node-sass --watch --include-path scss index.scss index.css --output-style expanded --source-map-embed true",
+      "build": "yarn prebuild & yarn build:expanded & yarn build:min",
       "build:expanded": "node-sass --include-path scss index.scss index.css --output-style expanded",
-      "build:min": "node-sass --include-path scss index.scss index.min.css --output-style compressed"
+      "build:min": "node-sass --include-path scss index.scss index.min.css --output-style compressed",
+      "prebuild": "yarn prebuild:min & yarn prebuild:expanded",
+      "prebuild:min": "rimraf index.min.css",
+      "prebuild:expanded": "rimraf index.css"
    },
    "repository": {
       "type": "git",
@@ -27,6 +30,7 @@
    "devDependencies": {
       "node-sass": "^4.13.1",
       "prettier": "^1.19.1",
+      "rimraf": "^3.0.2",
       "sass-colors": "^1.0.11"
    }
 }
