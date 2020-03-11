@@ -4,7 +4,10 @@
    "description": "Colors classess for css3",
    "main": "index.css",
    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "dev": "node-sass --watch --include-path scss index.scss index.css --output-style expanded --source-map-embed true",
+      "build": "yarn build:expanded & yarn build:min",
+      "build:expanded": "node-sass --include-path scss index.scss index.css --output-style expanded",
+      "build:min": "node-sass --include-path scss index.scss index.min.css --output-style compressed"
    },
    "repository": {
       "type": "git",
