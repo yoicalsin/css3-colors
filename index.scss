@@ -1,5 +1,13 @@
+/* LILCENSE for sass-colors */
 @import 'node_modules/sass-colors/index.scss';
-// Color Classes
+
+/* LILCENSE for css3-colors */
+/*!
+ * css3-colors v1.0.0 (https://github.com/yoicalsin/css3-colors)
+ * Copyright 2019 The Sass Colors Authors
+ * Copyright 2019 Yoni Calsin.
+ * Licensed under MIT (https://github.com/yoicalsin/css3-colors/blob/master/LICENSE)
+ */
 
 @each $color_name, $color in $colors {
    @each $color_type, $color_value in $color {
