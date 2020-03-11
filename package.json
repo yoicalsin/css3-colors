@@ -2,7 +2,7 @@
    "name": "css3-colors",
    "version": "1.0.0",
    "description": "Colors classess for css3",
-   "main": "index.css",
+   "main": "dist/index.css",
    "scripts": {
       "dev": "yarn prebuild:expanded & node-sass --watch --include-path scss index.scss index.css --output-style expanded --source-map-embed true",
       "build": "yarn prebuild & yarn build:expanded & yarn build:min",
