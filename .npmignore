@@ -1,0 +1,8 @@
+# Folders
+/.vscode
+/node_modules
+
+# Files
+.gitignore
+.prettierrc.js
+index.scss
