@@ -23,6 +23,7 @@
    "homepage": "https://github.com/yoicalsin/css3-colors#readme",
    "devDependencies": {
       "node-sass": "^4.13.1",
-      "prettier": "^1.19.1"
+      "prettier": "^1.19.1",
+      "sass-colors": "^1.0.11"
    }
 }
